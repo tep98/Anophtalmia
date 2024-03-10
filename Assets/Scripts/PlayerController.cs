@@ -9,11 +9,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int[] _resolutions;
 
     private Rigidbody _rb;
-    RaycastHit _hit;
+    private Camera _cam;
 
     private void Start()
     {
         _rb = GetComponent<Rigidbody>();
+        _cam = Camera.main;
     }
 
     private void Update()
@@ -28,16 +29,19 @@ public class PlayerController : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
-        Vector3 move = new Vector3(x, 0, z);
 
+        Vector3 forward = _cam.transform.forward;
+        Vector3 right = _cam.transform.right;
 
-/*        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        forward.y = 0;
+        right.y = 0;
+        forward.Normalize();
+        right.Normalize();
 
-        Physics.Raycast(ray, out _hit);
-        Vector3 targetPosition = new Vector3(_hit.point.x, transform.position.y, _hit.point.z + 2.3f);
-        transform.LookAt(targetPosition);*/
+        Vector3 move = (forward * z + right * x).normalized;
 
-        _rb.MovePosition(transform.position + move.normalized * _moveSpeed * Time.deltaTime);
+        _rb.MovePosition(transform.position + move * _moveSpeed * Time.deltaTime);
+
         _animator.SetFloat("Horizontal", x);
         _animator.SetFloat("Vertical", z);
     }
