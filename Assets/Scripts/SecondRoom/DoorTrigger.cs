@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum Type{ Left, Front, Right, Back };
 
@@ -17,7 +18,15 @@ public class DoorTrigger : MonoBehaviour
             _canvas.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
-                RoomSwitch();
+                if(Paper.count != 3)
+                {
+                    RoomSwitch();
+                }
+                else
+                {
+                    SceneManager.LoadScene("ThirdScene");
+                }
+                
             }
         }
     }
