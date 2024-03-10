@@ -1,3 +1,4 @@
+using Assets.Pixelation.Scripts;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -52,5 +53,6 @@ public class PlayerController : MonoBehaviour
         _cameras[1].SetActive(false);
         _cameras[2].SetActive(false);
         _cameras[Random.Range(0,3)].SetActive(true);
+        Camera.main.GetComponent<Pixelation>().BlockCount = Random.Range(64.0f, 512.0f);
     }
 }
