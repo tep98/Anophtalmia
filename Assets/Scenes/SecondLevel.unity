@@ -187,6 +187,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -195,6 +199,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -203,6 +211,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (12)
@@ -229,6 +241,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25
@@ -277,6 +293,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -285,6 +305,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _type
       value: 4
@@ -307,6 +331,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+--- !u!1 &125868973
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 125868974}
+  - component: {fileID: 125868975}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &125868974
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125868973}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 979909982}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &125868975
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125868973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &377427412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -393,6 +461,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 100
@@ -441,6 +513,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _type
       value: 4
@@ -461,6 +537,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (9)
@@ -487,6 +567,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 75
@@ -535,6 +619,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -543,6 +631,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -551,6 +643,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (6)
@@ -576,6 +672,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 100
@@ -624,6 +724,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _type
       value: 4
@@ -644,6 +748,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (14)
@@ -768,7 +876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &634867066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1000,6 +1108,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25
@@ -1048,6 +1160,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -1056,6 +1172,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -1064,6 +1184,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (10)
@@ -1089,6 +1213,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25
@@ -1137,6 +1265,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -1145,6 +1277,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -1153,6 +1289,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (5)
@@ -1178,6 +1318,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50
@@ -1226,6 +1370,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -1234,6 +1382,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -1242,6 +1394,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (13)
@@ -1267,6 +1423,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50
@@ -1315,6 +1475,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -1323,6 +1487,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -1331,6 +1499,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (8)
@@ -1428,8 +1600,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21897052, y: 0, z: 0, w: 0.9757315}
-  m_LocalPosition: {x: 0, y: 2.5800002, z: -2}
+  m_LocalRotation: {x: 0.15110458, y: 0.8488951, z: -0.3577146, w: 0.35858735}
+  m_LocalPosition: {x: -10.13, y: 13.05, z: 10.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1497,6 +1669,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
   playerBody: {fileID: 3649240836937475590}
+--- !u!1 &979909980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979909982}
+  - component: {fileID: 979909981}
+  m_Layer: 0
+  m_Name: RoomCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &979909981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979909980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 7
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 60.000004
+    OrthographicSize: 5
+    NearClipPlane: 0.3
+    FarClipPlane: 1000
+    Dutch: 0
+    ModeOverride: 0
+    LensShift: {x: 0, y: 0}
+    GateFit: 2
+    FocusDistance: 10
+    m_SensorSize: {x: 1, y: 1}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 125868974}
+--- !u!4 &979909982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979909980}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.15110458, y: 0.8488951, z: -0.3577146, w: 0.35858735}
+  m_LocalPosition: {x: -10.13, y: 13.05, z: 10.11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 125868974}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 45.7, y: 134.2, z: 0}
 --- !u!1001 &1000407881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1513,6 +1757,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50
@@ -1573,6 +1821,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -1581,6 +1833,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (23)
@@ -1607,6 +1863,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50
@@ -1655,6 +1915,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -1663,6 +1927,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _type
       value: 4
@@ -1776,6 +2044,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 75
@@ -1836,6 +2108,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -1844,6 +2120,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (21)
@@ -2075,6 +2355,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -2083,6 +2367,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -2091,6 +2379,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (17)
@@ -2253,6 +2545,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50
@@ -2301,6 +2597,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -2309,6 +2609,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -2317,6 +2621,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (18)
@@ -2406,6 +2714,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -2414,6 +2726,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (22)
@@ -2755,6 +3071,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 100
@@ -2803,6 +3123,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _type
       value: 4
@@ -2823,6 +3147,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (19)
@@ -2854,6 +3182,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 75
@@ -2902,6 +3234,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -2910,6 +3246,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -2918,6 +3258,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (11)
@@ -2943,6 +3287,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25
@@ -2991,6 +3339,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -2999,6 +3351,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -3007,6 +3363,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (15)
@@ -3032,6 +3392,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 75
@@ -3080,6 +3444,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -3088,6 +3456,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -3096,6 +3468,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (16)
@@ -3121,6 +3497,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 100
@@ -3169,6 +3549,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _type
       value: 4
@@ -3322,6 +3706,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25
@@ -3382,6 +3770,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -3390,6 +3782,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (20)
@@ -3468,6 +3864,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -3476,6 +3876,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -3484,6 +3888,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (7)
@@ -3510,6 +3918,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 100
@@ -3582,6 +3994,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 9129338436426968064, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_Name
       value: room3 (labirint)1 (24)
@@ -3609,6 +4025,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 315488512599703092, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 498611600899950180, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 75
@@ -3657,6 +4077,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -3665,6 +4089,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _type
       value: 4
@@ -4717,6 +5145,7 @@ MonoBehaviour:
   - {fileID: 1549691297}
   - {fileID: 634867065}
   - {fileID: 1185824021}
+  - {fileID: 979909980}
   _resolutions: 
 --- !u!136 &4174667085037812926
 CapsuleCollider:
@@ -6149,6 +6578,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 623328693016581412, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _canvas
       value: 
@@ -6157,6 +6590,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 3649240836937475590}
+    - target: {fileID: 2121401571091912510, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
+      propertyPath: _virtualCamera
+      value: 
+      objectReference: {fileID: 979909982}
     - target: {fileID: 7299993820643320468, guid: 6a28c4b23c762e7409c345a3e5fcda06, type: 3}
       propertyPath: _type
       value: 4
@@ -6239,6 +6676,7 @@ SceneRoots:
   - {fileID: 1549691299}
   - {fileID: 634867067}
   - {fileID: 1185824023}
+  - {fileID: 979909982}
   - {fileID: 705507995}
   - {fileID: 3649240836937475590}
   - {fileID: 2037398856}

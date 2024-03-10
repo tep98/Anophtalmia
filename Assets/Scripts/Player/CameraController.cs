@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour
 
     private float xRotation = 0f;
 
-    private void Start()
+    private void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
