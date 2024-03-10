@@ -21,7 +21,6 @@ public class Paper : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 _paperCanvas.SetActive(false);
-                gameObject.SetActive(false);
                 count++;
             }
         }
