@@ -654,6 +654,54 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 79673721}
   m_SourcePrefab: {fileID: 100100000, guid: 198b72dfc5ca3fc4c8f1c439abcf2987, type: 3}
+--- !u!1 &801195345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 801195346}
+  - component: {fileID: 801195347}
+  m_Layer: 0
+  m_Name: DroneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &801195346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801195345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.91025686, y: 1.7927084, z: 3.3829005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &801195347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801195345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8119a78c7d7d346ae8d1d65728b0bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _drone1: {fileID: 79673721}
+  _drone2: {fileID: 1019466270}
+  _drone3: {fileID: 659152998}
+  _player: {fileID: 4174667085037812925}
 --- !u!1001 &801947506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1756,7 +1804,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 60.000004
     OrthographicSize: 5
-    NearClipPlane: 0.1
+    NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
     ModeOverride: 0
@@ -4785,7 +4833,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 5
   _animator: {fileID: 4174667085037812928}
-  _cameras:
+  _resolutions: 
+  cameras:
   - {fileID: 1549691297}
   - {fileID: 634867065}
   - {fileID: 1185824021}
@@ -4793,7 +4842,6 @@ MonoBehaviour:
   - {fileID: 1806531790}
   - {fileID: 289126984}
   - {fileID: 1531089315}
-  _resolutions: 
 --- !u!136 &4174667085037812926
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8134,3 +8182,4 @@ SceneRoots:
   - {fileID: 754060155}
   - {fileID: 801947506}
   - {fileID: 964770645}
+  - {fileID: 801195346}

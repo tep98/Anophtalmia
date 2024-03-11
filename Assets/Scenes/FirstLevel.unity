@@ -1687,7 +1687,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -11013,14 +11013,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 5
   _animator: {fileID: 4174667085037812928}
-  _cameras:
+  _resolutions: 
+  cameras:
   - {fileID: 1549691297}
   - {fileID: 634867065}
   - {fileID: 1185824021}
   - {fileID: 979909980}
   - {fileID: 276026398}
   - {fileID: 1209882571}
-  _resolutions: 
 --- !u!136 &4174667085037812926
 CapsuleCollider:
   m_ObjectHideFlags: 0

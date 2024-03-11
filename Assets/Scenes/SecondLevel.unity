@@ -5487,12 +5487,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 5
   _animator: {fileID: 4174667085037812928}
-  _cameras:
+  _resolutions: 
+  cameras:
   - {fileID: 1549691297}
   - {fileID: 634867065}
   - {fileID: 1185824021}
   - {fileID: 979909980}
-  _resolutions: 
 --- !u!136 &4174667085037812926
 CapsuleCollider:
   m_ObjectHideFlags: 0
