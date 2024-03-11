@@ -5,6 +5,7 @@ public class PasswordsPaper : MonoBehaviour
     [SerializeField] private GameObject _canvas;
     [SerializeField] private GameObject _passwordCanvas;
     [SerializeField] private PaperManager _parent;
+    [SerializeField] private GameObject _player;
     public static int count = 0;
 
     private void Update()
@@ -12,9 +13,11 @@ public class PasswordsPaper : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && _canvas.activeSelf)
         {
             _passwordCanvas.SetActive(true);
+            _player.GetComponent<PlayerController>().enabled = false;
         }
         if (Input.GetKeyDown(KeyCode.Escape) && _canvas.activeSelf)
         {
+            _player.GetComponent<PlayerController>().enabled = true;
             _passwordCanvas.SetActive(false);
             count++;
             _parent.EnablePaper(count);
