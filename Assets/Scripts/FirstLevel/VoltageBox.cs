@@ -8,6 +8,7 @@ public class VoltageBox : MonoBehaviour
     [SerializeField] private GameObject _light;
     [SerializeField] private GameObject _flashlight;
     [SerializeField] private BoxCollider _trigger;
+    [SerializeField] private AudioSource _ElectroSound;
 
     private bool _beforeOpen = false;
     private bool _opened = false;
@@ -21,6 +22,7 @@ public class VoltageBox : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && _opened)
         {
             _light.SetActive(true);
+            _ElectroSound.Play();
             _flashlight.SetActive(false);
             _canvas2.SetActive(false);
             _opened = false;
