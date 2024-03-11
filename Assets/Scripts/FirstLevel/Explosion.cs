@@ -13,6 +13,7 @@ public class Explosion : MonoBehaviour
     [SerializeField] private float _radius;
     [SerializeField] private float _force;
     [SerializeField] private GameObject _explosionEffect;
+    [SerializeField] private AudioSource _explosionSound;
     [SerializeField] private GameObject _stopper;
 
     private bool _placed = false;
@@ -62,6 +63,7 @@ public class Explosion : MonoBehaviour
         Destroy(gameObject);
         _explosiveCanvas.SetActive(false);
         Instantiate(_explosionEffect, transform.position, Quaternion.identity);
+        _explosionSound.Play();
         _stopper.SetActive(false);
     }
 
