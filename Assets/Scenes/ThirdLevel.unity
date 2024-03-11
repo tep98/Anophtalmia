@@ -241,6 +241,7 @@ MonoBehaviour:
   _canvas: {fileID: 910482882}
   _passwordCanvas: {fileID: 1948126558}
   _parent: {fileID: 1692606616}
+  _player: {fileID: 4174667085037812924}
 --- !u!23 &49809789
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4161,6 +4162,7 @@ MonoBehaviour:
   _canvas: {fileID: 195245432}
   _passwordCanvas: {fileID: 651679122}
   _parent: {fileID: 1692606616}
+  _player: {fileID: 4174667085037812924}
 --- !u!23 &1238762213
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14179,6 +14181,7 @@ MonoBehaviour:
   _canvas: {fileID: 5623198356766884395}
   _passwordCanvas: {fileID: 2542644862267082242}
   _parent: {fileID: 1692606616}
+  _player: {fileID: 4174667085037812924}
 --- !u!33 &9170846854154873062
 MeshFilter:
   m_ObjectHideFlags: 0
