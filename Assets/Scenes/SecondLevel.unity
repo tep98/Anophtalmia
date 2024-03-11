@@ -410,6 +410,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2806856240191279711, guid: 293468f76c52ed04784f38a730b93499, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 4174667085037812924}
+    - target: {fileID: 2806856240191279711, guid: 293468f76c52ed04784f38a730b93499, type: 3}
       propertyPath: _paperCanvas
       value: 
       objectReference: {fileID: 377427413}
@@ -906,6 +910,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2806856240191279711, guid: 293468f76c52ed04784f38a730b93499, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 4174667085037812924}
     - target: {fileID: 2806856240191279711, guid: 293468f76c52ed04784f38a730b93499, type: 3}
       propertyPath: _paperCanvas
       value: 
@@ -6224,6 +6232,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2806856240191279711, guid: 293468f76c52ed04784f38a730b93499, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 4174667085037812924}
     - target: {fileID: 2806856240191279711, guid: 293468f76c52ed04784f38a730b93499, type: 3}
       propertyPath: _paperCanvas
       value: 
