@@ -21,6 +21,7 @@ public class Desk : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        //if (other.CompareTag("Player") && PasswordsPaper.count == 3)
         if (other.CompareTag("Player"))
         {
             if (!_enabled) _canvas.SetActive(true);

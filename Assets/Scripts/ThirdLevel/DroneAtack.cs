@@ -15,8 +15,19 @@ public class DroneAtack : MonoBehaviour
         _player.DisableCameras();
         _player.cameras[3].SetActive(true);
 
-        _drone1.SetTrigger("Started");
-        _drone2.SetTrigger("Started");
-        _drone3.SetTrigger("Started");
+        _drone1.SetTrigger("Start");
+        _drone2.SetTrigger("Start");
+        _drone3.SetTrigger("Start");
+    }
+    public void DroneToExit()
+    {
+        Invoke("Drone", 7f);
+    }
+
+    private void Drone()
+    {
+        _drone1.SetTrigger("End");
+        _drone2.SetTrigger("End");
+        _drone3.SetTrigger("End");
     }
 }
