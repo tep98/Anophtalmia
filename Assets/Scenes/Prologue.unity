@@ -8124,8 +8124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
-  target: {fileID: 3649240836937475590}
   panel: {fileID: 1518968273}
+  player: {fileID: 4174667085037812924}
+  track: {fileID: 975512608}
 --- !u!65 &975512613
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14696,7 +14697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1518968274
 RectTransform:
   m_ObjectHideFlags: 0
