@@ -920,6 +920,7 @@ MonoBehaviour:
   _radius: 15
   _force: 750
   _explosionEffect: {fileID: 4158566037266319950, guid: 560fa62f9d26e2b43b2c468779d4686c, type: 3}
+  _stopper: {fileID: 0}
 --- !u!65 &305267727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1478,6 +1479,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579197484}
   m_CullTransparentMesh: 1
+--- !u!1 &622123139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 622123140}
+  - component: {fileID: 622123141}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &622123140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622123139}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 2.08, y: 1.2200001, z: 9.33}
+  m_LocalScale: {x: 100, y: 373.8979, z: 24.959396}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450653197568433}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &622123141
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622123139}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.02442683, y: 0.030916622, z: 0.39830795}
+  m_Center: {x: -0.02728679, y: -0.034542385, z: 0.14915456}
 --- !u!1 &634867065
 GameObject:
   m_ObjectHideFlags: 0
@@ -5740,6 +5794,7 @@ Transform:
   - {fileID: 4083501151330154487}
   - {fileID: 5680519944285777507}
   - {fileID: 2024376641}
+  - {fileID: 622123140}
   - {fileID: 7967766326245086650}
   - {fileID: 4865064391644094389}
   - {fileID: 4306643202883404587}
