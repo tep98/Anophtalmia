@@ -58,7 +58,9 @@ public class Explosion : MonoBehaviour
             }
         }
         _placedBomb.SetActive(false);
-        //Instantiate(_explosionEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+        _explosiveCanvas.SetActive(false);
+        Instantiate(_explosionEffect, transform.position, Quaternion.identity);
     }
 
     private void OnDrawGizmos()
