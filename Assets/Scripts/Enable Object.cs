@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class EnableObject : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem _particles;
     [SerializeField] private GameObject _object;
+
+    public void PlayParticles()
+    {
+        _particles.Play();
+    }
 
     public void ObjectSetActive()
     {
