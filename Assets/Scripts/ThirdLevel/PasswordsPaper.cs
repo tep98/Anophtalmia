@@ -4,6 +4,7 @@ public class PasswordsPaper : MonoBehaviour
 {
     [SerializeField] private GameObject _canvas;
     [SerializeField] private GameObject _passwordCanvas;
+    [SerializeField] private PaperManager _parent;
     public static int count = 0;
 
     private void Update()
@@ -16,6 +17,7 @@ public class PasswordsPaper : MonoBehaviour
         {
             _passwordCanvas.SetActive(false);
             count++;
+            _parent.EnablePaper(count);
             Destroy(gameObject);
         }
 
