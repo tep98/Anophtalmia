@@ -8,6 +8,8 @@ public class DroneAtack : MonoBehaviour
     [SerializeField] private Animator _drone2;
     [SerializeField] private Animator _drone3;  
 
+    [SerializeField] private GameObject _Door;  
+
     [SerializeField] private PlayerController _player;
 
     private void Start()
@@ -29,5 +31,7 @@ public class DroneAtack : MonoBehaviour
         _drone1.SetTrigger("End");
         _drone2.SetTrigger("End");
         _drone3.SetTrigger("End");
+
+        _Door.GetComponent<LevelDoor>().enabled = true;
     }
 }

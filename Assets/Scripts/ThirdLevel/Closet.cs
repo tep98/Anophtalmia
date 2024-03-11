@@ -76,9 +76,10 @@ public class Closet : MonoBehaviour
             {
                 _playerPosition = _player.transform.position;
                 // _player.transform.Rotate(0, -88.351f, 0);
-                    _player.transform.rotation = gameObject.transform.rotation;
+                _player.transform.rotation = gameObject.transform.rotation;
                 _player.GetComponent<CapsuleCollider>().isTrigger = true;
                 _cam.GetComponent<CameraController>().enabled = false;
+                _player.GetComponent<PlayerController>().enabled = false;
                 _player.GetComponentInChildren<Rigidbody>().isKinematic = true;
                 _player.transform.position = _spawnPoint.transform.position;
                 _canvas.SetActive(true);
@@ -94,6 +95,7 @@ public class Closet : MonoBehaviour
                 _cam.GetComponent<CameraController>().enabled = true;
                 _player.GetComponent<CapsuleCollider>().isTrigger = false;
                 _player.GetComponentInChildren<Rigidbody>().isKinematic = false;
+                _player.GetComponent<PlayerController>().enabled = true;
                 _player.transform.rotation = gameObject.transform.rotation;
                 _player.transform.position = _playerPosition;
                 _canHide = true;
