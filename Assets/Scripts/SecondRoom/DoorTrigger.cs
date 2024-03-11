@@ -12,28 +12,35 @@ public class DoorTrigger : MonoBehaviour
     [SerializeField] private Transform _player;
     [SerializeField] private Type _type;
     [SerializeField] private Transform _virtualCamera;
+
+    public bool _enabled = false;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && _enabled)
+        {
+            if (Paper.count != 3)
+            {
+                RoomSwitch();
+            }
+            else
+            {
+                SceneManager.LoadScene("ThirdScene");
+            }
+        }
+    }
     private void OnTriggerStay(Collider other)
     {
         if(other.CompareTag("Player"))
         {
             _canvas.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                if(Paper.count != 3)
-                {
-                    RoomSwitch();
-                }
-                else
-                {
-                    SceneManager.LoadScene("ThirdScene");
-                }
-                
-            }
+            _enabled = true;
         }
     }
     private void OnTriggerExit(Collider other)
     {
         _canvas.SetActive(false);
+        _enabled = false;
     }
     private void RoomSwitch()
     {

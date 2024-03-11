@@ -5,9 +5,10 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 5f;
     [SerializeField] private Animator _animator;
-    [SerializeField] private GameObject[] _cameras;
     [SerializeField] private int[] _resolutions;
 
+    public GameObject[] cameras;
+    
     private Rigidbody _rb;
     private Camera _cam;
 
@@ -48,12 +49,19 @@ public class PlayerController : MonoBehaviour
 
     private void RandomCamera()
     {
-        for(int i = 0; i < _cameras.Length - 1; i++)
-        {
-            _cameras[i].SetActive(false);
-        }
-        _cameras[Random.Range(0,_cameras.Length-1)].SetActive(true);
+        DisableCameras();
+        cameras[Random.Range(0,cameras.Length-1)].SetActive(true);
         Camera.main.GetComponent<Pixelation>().BlockCount = Random.Range(64.0f, 512.0f);
         //—юда добавить код дл€ запуска эффекта глитчей
+
+        Invoke("RandomCamera", Random.Range(10f,35f));
+    }
+
+    public void DisableCameras()
+    {
+        for (int i = 0; i < cameras.Length - 1; i++)
+        {
+            cameras[i].SetActive(false);
+        }
     }
 }
