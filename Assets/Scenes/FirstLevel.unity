@@ -920,7 +920,7 @@ MonoBehaviour:
   _radius: 15
   _force: 750
   _explosionEffect: {fileID: 4158566037266319950, guid: 560fa62f9d26e2b43b2c468779d4686c, type: 3}
-  _stopper: {fileID: 0}
+  _stopper: {fileID: 622123139}
 --- !u!65 &305267727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1687,7 +1687,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
