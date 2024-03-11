@@ -48,11 +48,11 @@ public class PlayerController : MonoBehaviour
 
     private void RandomCamera()
     {
-        _cameras[0].SetActive(false);
-        _cameras[1].SetActive(false);
-        _cameras[2].SetActive(false);
-        _cameras[3].SetActive(false);
-        _cameras[Random.Range(0,_cameras.Length)].SetActive(true);
+        for(int i = 0; i < _cameras.Length - 1; i++)
+        {
+            _cameras[i].SetActive(false);
+        }
+        _cameras[Random.Range(0,_cameras.Length-1)].SetActive(true);
         Camera.main.GetComponent<Pixelation>().BlockCount = Random.Range(64.0f, 512.0f);
     }
 }
