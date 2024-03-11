@@ -5,14 +5,20 @@ public class Bomb : MonoBehaviour
 {
     [SerializeField] private GameObject _canvas;
     [SerializeField] private GameObject _bombPlace;
-    [SerializeField] private GameObject _hand;
 
-    private bool _explosed = false;
+    [SerializeField] private GameObject _child1;
+    [SerializeField] private GameObject _child2;
+    public GameObject hand;
+
+    public bool OnHand = false;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && _canvas.activeSelf)
         {
-            _hand.SetActive(true);
+            hand.SetActive(true);
+            OnHand = true;
+            _child1.SetActive(false);
+            _child2.SetActive(false);
             _canvas.SetActive(false);
         }
     }
@@ -20,7 +26,7 @@ public class Bomb : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (!_explosed) _canvas.SetActive(true);
+            if (!OnHand) _canvas.SetActive(true);
         }
     }
     private void OnTriggerExit(Collider other)

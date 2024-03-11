@@ -54,5 +54,6 @@ public class PlayerController : MonoBehaviour
         }
         _cameras[Random.Range(0,_cameras.Length-1)].SetActive(true);
         Camera.main.GetComponent<Pixelation>().BlockCount = Random.Range(64.0f, 512.0f);
+        //—юда добавить код дл€ запуска эффекта глитчей
     }
 }
