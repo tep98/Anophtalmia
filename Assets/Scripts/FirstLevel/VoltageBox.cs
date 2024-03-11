@@ -7,10 +7,15 @@ public class VoltageBox : MonoBehaviour
     [SerializeField] private GameObject _canvas2;
     [SerializeField] private GameObject _light;
     [SerializeField] private GameObject _flashlight;
+    [SerializeField] private BoxCollider _trigger;
 
     private bool _beforeOpen = false;
     private bool _opened = false;
 
+    private void Awake()
+    {
+        _trigger = gameObject.GetComponent<BoxCollider>();
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && _opened)
@@ -27,6 +32,7 @@ public class VoltageBox : MonoBehaviour
             _canvas2.SetActive(true);
             _opened = true;
             _beforeOpen = false;
+            _trigger.enabled = false;
         }
     }
     private void OnTriggerEnter(Collider other)
