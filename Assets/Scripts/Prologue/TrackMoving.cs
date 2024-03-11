@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class TrackMoving : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private Transform target;
     [SerializeField] private GameObject panel;
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject track;
     private void Update()
     {
         Vector3 position = new Vector3(transform.position.x, 2.6f, transform.position.z);
 
-        transform.position = Vector3.MoveTowards(position, target.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(position, player.transform.position, speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -20,7 +21,8 @@ public class TrackMoving : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             panel.SetActive(true);
-            gameObject.SetActive(false);
+            player.SetActive(false);
+            track.SetActive(false);
         }
     }
 }
