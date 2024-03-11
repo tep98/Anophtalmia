@@ -4,11 +4,20 @@ using UnityEngine.SceneManagement;
 public class LevelDoor : MonoBehaviour
 {
     [SerializeField] private GameObject _canvas;
+    [SerializeField] private int _number;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && _canvas.activeSelf)
         {
-            SceneManager.LoadScene("SecondLevel");
+            if(_number == 2)
+            {
+                SceneManager.LoadScene("SecondLevel");
+            }
+            if (_number == 3)
+            {
+                SceneManager.LoadScene("FinalRoom");
+            }
+
         }
     }
     private void OnTriggerStay(Collider other)
