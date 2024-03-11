@@ -19,13 +19,13 @@ public class DoorTrigger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && _enabled)
         {
-            if (Paper.count != 3)
+            if (Paper.count == 3)
             {
-                RoomSwitch();
+                SceneManager.LoadScene("ThirdLevel");
             }
             else
             {
-                SceneManager.LoadScene("ThirdScene");
+                RoomSwitch();
             }
         }
     }
