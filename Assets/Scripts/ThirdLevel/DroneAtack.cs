@@ -18,6 +18,9 @@ public class DroneAtack : MonoBehaviour
     [SerializeField] private AudioSource _EpicMusic;
     [SerializeField] private AudioSource _NormalMusic;
 
+    [SerializeField] private GameObject _text1;
+    [SerializeField] private GameObject _text2;
+    [SerializeField] private GameObject _text3;
     private void Start()
     {
         _switcher.DisableCameras();
@@ -34,12 +37,14 @@ public class DroneAtack : MonoBehaviour
 
         _NormalMusic.Stop();
         _EpicMusic.Play();
+
+        _text1.SetActive(false);
+        _text2.SetActive(true);
     }
     public void DroneToExit()
     {
         Invoke("Drone", 7f);
     }
-
     private void Drone()
     {
         _drone1.SetTrigger("End");
@@ -52,5 +57,8 @@ public class DroneAtack : MonoBehaviour
 
         _EpicMusic.Stop();
         _NormalMusic.Play();
+
+        _text2.SetActive(false);
+        _text3.SetActive(true);
     }
 }

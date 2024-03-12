@@ -16,6 +16,9 @@ public class Explosion : MonoBehaviour
     [SerializeField] private AudioSource _explosionSound;
     [SerializeField] private GameObject _stopper;
 
+    [SerializeField] private GameObject _text1;
+    [SerializeField] private GameObject _text2;
+
     private bool _placed = false;
     private void Update()
     {
@@ -65,6 +68,9 @@ public class Explosion : MonoBehaviour
         Instantiate(_explosionEffect, transform.position, Quaternion.identity);
         _explosionSound.Play();
         _stopper.SetActive(false);
+
+        _text1.SetActive(false);
+        _text2.SetActive(true);
     }
 
     private void OnDrawGizmos()

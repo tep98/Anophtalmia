@@ -8,6 +8,11 @@ public class Desk : MonoBehaviour
     [SerializeField] private GameObject _errorCanvas;
     [SerializeField] private GameObject _droneManager;
 
+    [SerializeField] private GameObject _text1;
+    [SerializeField] private GameObject _text2;
+
+    private bool isUsing = true;
+
     private bool _enabled = false;
     private void Update()
     {
@@ -17,6 +22,14 @@ public class Desk : MonoBehaviour
             _canvas.SetActive(false);
             _errorCanvas.SetActive(true);
             Invoke("DisableCanvas", 2f);
+        }
+
+        if (PasswordsPaper.count == 3 && isUsing)
+        {
+            _text1.SetActive(false);
+            _text2.SetActive(true);
+
+            isUsing = false;    
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -35,5 +48,6 @@ public class Desk : MonoBehaviour
     {
         _errorCanvas.SetActive(false);
         _droneManager.SetActive(true);
+
     }
 }
