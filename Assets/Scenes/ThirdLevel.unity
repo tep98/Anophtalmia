@@ -2622,7 +2622,7 @@ MonoBehaviour:
   _drone2: {fileID: 1019466270}
   _drone3: {fileID: 659152998}
   _Door: {fileID: 1106823222}
-  _player: {fileID: 4174667085037812925}
+  _switcher: {fileID: 4174667085037812929}
 --- !u!1001 &801947506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3453,7 +3453,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42cd8dcae69d178488f5efa28e7c7e78, type: 3}
   m_Name: 
@@ -10423,6 +10423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3649240836937475590}
   - component: {fileID: 4174667085037812925}
+  - component: {fileID: 4174667085037812929}
   - component: {fileID: 4174667085037812926}
   - component: {fileID: 4174667085037812927}
   - component: {fileID: 4174667085037812928}
@@ -10448,14 +10449,6 @@ MonoBehaviour:
   _moveSpeed: 5
   _animator: {fileID: 4174667085037812928}
   _resolutions: 
-  cameras:
-  - {fileID: 1549691297}
-  - {fileID: 634867065}
-  - {fileID: 1185824021}
-  - {fileID: 979909980}
-  - {fileID: 1806531790}
-  - {fileID: 289126984}
-  - {fileID: 1531089315}
 --- !u!136 &4174667085037812926
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10528,6 +10521,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4174667085037812929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4174667085037812924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9911e08234211c64ba52a835ba970043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameras:
+  - {fileID: 1549691297}
+  - {fileID: 634867065}
+  - {fileID: 1185824021}
+  - {fileID: 979909980}
+  - {fileID: 1806531790}
+  - {fileID: 289126984}
+  - {fileID: 1531089315}
 --- !u!222 &4178032384428721504
 CanvasRenderer:
   m_ObjectHideFlags: 0

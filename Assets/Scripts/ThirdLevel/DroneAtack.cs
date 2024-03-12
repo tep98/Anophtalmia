@@ -10,12 +10,13 @@ public class DroneAtack : MonoBehaviour
 
     [SerializeField] private GameObject _Door;  
 
-    [SerializeField] private PlayerController _player;
+    [SerializeField] private CameraSwitcher _switcher;
 
     private void Start()
     {
-        _player.DisableCameras();
-        _player.cameras[3].SetActive(true);
+        _switcher.DisableCameras();
+        _switcher.cameras[3].SetActive(true);
+        _switcher.enabled = false;
 
         _drone1.SetTrigger("Start");
         _drone2.SetTrigger("Start");
@@ -31,6 +32,8 @@ public class DroneAtack : MonoBehaviour
         _drone1.SetTrigger("End");
         _drone2.SetTrigger("End");
         _drone3.SetTrigger("End");
+
+        _switcher.enabled = true;
 
         _Door.GetComponent<LevelDoor>().enabled = true;
     }

@@ -3354,7 +3354,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 60.000004
     OrthographicSize: 5
-    NearClipPlane: 0.1
+    NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
     ModeOverride: 0
@@ -5635,6 +5635,7 @@ GameObject:
   - component: {fileID: 4174667085037812926}
   - component: {fileID: 4174667085037812927}
   - component: {fileID: 4174667085037812928}
+  - component: {fileID: 4174667085037812929}
   m_Layer: 0
   m_Name: MC
   m_TagString: Player
@@ -5657,11 +5658,6 @@ MonoBehaviour:
   _moveSpeed: 5
   _animator: {fileID: 4174667085037812928}
   _resolutions: 
-  cameras:
-  - {fileID: 1549691297}
-  - {fileID: 634867065}
-  - {fileID: 1185824021}
-  - {fileID: 979909980}
 --- !u!136 &4174667085037812926
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5734,6 +5730,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4174667085037812929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4174667085037812924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9911e08234211c64ba52a835ba970043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameras:
+  - {fileID: 1549691297}
+  - {fileID: 634867065}
+  - {fileID: 1185824021}
+  - {fileID: 979909980}
 --- !u!4 &4181328200371440312
 Transform:
   m_ObjectHideFlags: 0
