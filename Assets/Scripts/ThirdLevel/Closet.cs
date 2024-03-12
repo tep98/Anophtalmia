@@ -4,7 +4,6 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Closet : MonoBehaviour
 {
