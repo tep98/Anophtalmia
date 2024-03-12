@@ -15,7 +15,7 @@ public class PasswordsPaper : MonoBehaviour
             _passwordCanvas.SetActive(true);
             _player.GetComponent<PlayerController>().enabled = false;
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && _canvas.activeSelf)
+        if (Input.GetKeyDown(KeyCode.Q) && _canvas.activeSelf)
         {
             _player.GetComponent<PlayerController>().enabled = true;
             _passwordCanvas.SetActive(false);
