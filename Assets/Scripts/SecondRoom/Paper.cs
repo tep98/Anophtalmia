@@ -14,7 +14,7 @@ public class Paper : MonoBehaviour
             _paperCanvas.SetActive(true);
             _player.GetComponent<PlayerController>().enabled = false;
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && _canvas.activeSelf)
+        if (Input.GetKeyDown(KeyCode.Q) && _canvas.activeSelf)
         {
             _player.GetComponent<PlayerController>().enabled = true;
             _paperCanvas.SetActive(false);
