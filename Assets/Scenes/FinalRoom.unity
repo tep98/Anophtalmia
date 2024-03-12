@@ -13862,7 +13862,6 @@ MonoBehaviour:
   _moveSpeed: 5
   _animator: {fileID: 4174667085037812928}
   _resolutions: 
-  cameras: []
 --- !u!136 &4174667085037812926
 CapsuleCollider:
   m_ObjectHideFlags: 0

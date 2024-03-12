@@ -7,6 +7,12 @@ public class CameraSwitcher : MonoBehaviour
 {
     public GameObject[] cameras;
 
+    private void Awake()
+    {
+
+        RandomCamera();
+
+}
     private void RandomCamera()
     {
         DisableCameras();
@@ -14,7 +20,7 @@ public class CameraSwitcher : MonoBehaviour
         Camera.main.GetComponent<Pixelation>().BlockCount = Random.Range(64.0f, 512.0f);
         //—юда добавить код дл€ запуска эффекта глитчей
 
-        Invoke("RandomCamera", Random.Range(5f, 10f));
+        Invoke("RandomCamera", Random.Range(4f, 10f));
     }
 
     public void DisableCameras()
